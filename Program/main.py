@@ -157,30 +157,30 @@ class MyApp(QMainWindow):
                             g = g_1
                             self.FirstDev()
                             # result = result*(sd1.transpose())
-                            sd1_formula = (sd1.transpose()).dot(B)
-                            sd1_result = sum(sd1_formula)
+#                             sd1_formula = (sd1.transpose()).dot(B)
+#                             sd1_result = sum(sd1_formula)
                             
                         elif step == "2nd Derivative":
                             s = s_2
                             g = g_2
                             self.SecondDev()
-                            sd2_formula = (sd2.transpose()).dot(B)
-                            sd2_result = sum(sd2_formula)
+#                             sd2_formula = (sd2.transpose()).dot(B)
+#                             sd2_result = sum(sd2_formula)
                             
                         elif step == "RAW":
                             total = result
                             
                         elif step == "SNV":
                             self.snv()
-                            snv_formula = (snv_data.transpose()).dot(B)
-                            snv_result = sum(snv_formula)
+#                             snv_formula = (snv_data.transpose()).dot(B)
+#                             snv_result = sum(snv_formula)
 
                         elif step == "Smoothing Size":
                             s = s_3
                             g = g_3
                             self.smooth_x()
-                            smt_formula = (smooth.transpose()).dot(B)
-                            smt_result = sum(smooth)
+#                             smt_formula = (smooth.transpose()).dot(B)
+#                             smt_result = sum(smooth)
                         
                     realresult = sum(result)
                     result1 = realresult + self.systemconfig.spinBox_4.value()
