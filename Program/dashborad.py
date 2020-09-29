@@ -390,11 +390,11 @@ class  Ui_MainWindow(QMainWindow):
 
         # def retranslateUi(self):
         #         _translate = QtCore.QCoreApplication.translate
-                self.setWindowTitle("goleto_1-master-Recent-4-XdotB")
+                self.setWindowTitle("PredictSoftware")
                 self.EXIT.setText( "EXIT")
                 self.START.setText("START")
                 self.STOP.setText("STOP")
-                self.dateNtime.setText("<font color=\"white\">DD MMM | HH : MM AM/PM</font>")
+                self.dateNtime.setText(" ")
                 self.result1.setText("0")
                 self.result2.setText("0")
                 self.result4.setText("0")
