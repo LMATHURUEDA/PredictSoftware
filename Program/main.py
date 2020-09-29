@@ -163,9 +163,6 @@ class MyApp(QMainWindow):
                             g = g_2
                             self.SecondDev()
                             
-                        elif step == "RAW":
-                            total = result
-                            
                         elif step == "SNV":
                             self.snv()
 
@@ -212,9 +209,6 @@ class MyApp(QMainWindow):
                             g = g_2
                             self.SecondDev()
                             result = result*(sd2.transpose())
-                            
-                        elif step == "RAW":
-                            total = result
                             
                         elif step == "SNV":
                             self.snv()
@@ -264,10 +258,7 @@ class MyApp(QMainWindow):
                             g = g_2
                             self.SecondDev()
                             result = result*(sd2.transpose())
-                            
-                        elif step == "RAW":
-                            total = result
-                            
+
                         elif step == "SNV":
                             self.snv()
                             result = result*(snv_data.transpose())
@@ -317,10 +308,7 @@ class MyApp(QMainWindow):
                             g = g_2
                             self.SecondDev()
                             result = result*(sd2.transpose())
-                            
-                        elif step == "RAW":
-                            total = result
-                            
+
                         elif step == "SNV":
                             self.snv()
                             result = result*(snv_data.transpose())
@@ -372,9 +360,6 @@ class MyApp(QMainWindow):
                             g = g_2
                             self.SecondDev()
                             result = result*(sd2.transpose())
-                            
-                        elif step == "RAW":
-                            total = result
                             
                         elif step == "SNV":
                             self.snv()
