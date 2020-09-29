@@ -158,7 +158,7 @@ class MyApp(QMainWindow):
                             self.FirstDev()
                             # result = result*(sd1.transpose())
                             sd1_formula = (sd1.transpose()).dot(B)
-                            # sd1_result = sum(sd1_formula)
+                            sd1_result = sum(sd1_formula)
                             
                         elif step == "2nd Derivative":
                             s = s_2
@@ -183,7 +183,6 @@ class MyApp(QMainWindow):
                             smt_result = sum(smooth)
                         
                     realresult = sum(result)
-                    # sd1_realresult = sum(sd1_formula)
                     result1 = realresult + self.systemconfig.spinBox_4.value()
                     print("cal result1  : ", realresult, "+ Bias : ", self.systemconfig.spinBox_4.value(), " = ", result1)
                     self.dashborad.result1.setText(str(np.round(result1, 2)))
